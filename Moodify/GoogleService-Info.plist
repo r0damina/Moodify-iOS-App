@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyADueaRFy7HCfgwKEYBFM_FZhNALE9euE8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>281175373367</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>RawandSalameh.Moodify</string>
+	<key>PROJECT_ID</key>
+	<string>graduationproject-abb48</string>
+	<key>STORAGE_BUCKET</key>
+	<string>graduationproject-abb48.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:281175373367:ios:133c3b4d9a964e33f171b2</string>
+</dict>
+</plist>

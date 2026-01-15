@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D4B00DAE74719AF24E2699E /* Pods_Moodify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A305BC32722EB73D3C11ADF /* Pods_Moodify.framework */; };
+		5227E8202CDA809300A691E5 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227E81F2CDA809300A691E5 /* Gif.swift */; };
+		5227E8222CDA827900A691E5 /* Image.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5227E8212CDA827900A691E5 /* Image.gif */; };
+		522B93DB2CA0D67F00EA252B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522B93DA2CA0D67F00EA252B /* Assets.xcassets */; };
+		522B93DE2CA0D67F00EA252B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522B93DD2CA0D67F00EA252B /* Preview Assets.xcassets */; };
+		522EA2D32CB928BC0011CE0D /* Happy - Pharrell Williams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 522EA2D22CB928BC0011CE0D /* Happy - Pharrell Williams.mp3 */; };
+		522EEE9F2D161C9900EA1402 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 522EEE9E2D161C9900EA1402 /* AudioKit */; };
+		5248F5092CB92F9700F84184 /* Uptown Funk - Mark Ronson ft. Bruno Mars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5248F5082CB92F9700F84184 /* Uptown Funk - Mark Ronson ft. Bruno Mars.mp3 */; };
+		5248F50B2CB93F4E00F84184 /* Adele - Hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5248F50A2CB93F4E00F84184 /* Adele - Hello.mp3 */; };
+		5248F50D2CB9414100F84184 /* Lord Huron - The Night We Met.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5248F50C2CB9414000F84184 /* Lord Huron - The Night We Met.mp3 */; };
+		526172552CC27121000A5CFD /* EmotionDetectionModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 52A092EE2CC25C6800B4E903 /* EmotionDetectionModel.mlpackage */; };
+		52728FFE2D2DA10C003C3F11 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52728FFD2D2DA10C003C3F11 /* AppState.swift */; };
+		528940132D23D8F5008B5C36 /* Bakar - Hell N Back feat. Summer Walker.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 528940122D23D8F5008B5C36 /* Bakar - Hell N Back feat. Summer Walker.mp3 */; };
+		528940152D23DAB6008B5C36 /* Jungle - Back on 74.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 528940142D23DAB6008B5C36 /* Jungle - Back on 74.mp3 */; };
+		528940172D23DBE8008B5C36 /* Daft Punk - get lucky feat. Pharrell Williams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 528940162D23DBE8008B5C36 /* Daft Punk - get lucky feat. Pharrell Williams.mp3 */; };
+		528940192D240803008B5C36 /* Another Love - Tom Odell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 528940182D240803008B5C36 /* Another Love - Tom Odell.mp3 */; };
+		5289401B2D240903008B5C36 /* Audioslave - Like A Stone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5289401A2D240903008B5C36 /* Audioslave - Like A Stone.mp3 */; };
+		5289401D2D240987008B5C36 /* SYML - Where's My Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5289401C2D240987008B5C36 /* SYML - Where's My Love.mp3 */; };
+		5289401F2D240A2A008B5C36 /* Madison Beer - Reckless.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5289401E2D240A2A008B5C36 /* Madison Beer - Reckless.mp3 */; };
+		528940212D241082008B5C36 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528940202D241082008B5C36 /* ModelManager.swift */; };
+		529583C92D19D2A300AECE74 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 529583C82D19D2A300AECE74 /* Gotham-Black.otf */; };
+		529583CB2D19D2AE00AECE74 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 529583CA2D19D2AE00AECE74 /* Gotham-Bold.otf */; };
+		529583CD2D19D2B700AECE74 /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 529583CC2D19D2B700AECE74 /* Gotham-BookItalic.otf */; };
+		529583CF2D19D2C000AECE74 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 529583CE2D19D2C000AECE74 /* Gotham-Light.otf */; };
+		529583D12D19D2C900AECE74 /* Gotham-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 529583D02D19D2C900AECE74 /* Gotham-Thin.otf */; };
+		529583D32D19D2D400AECE74 /* Gotham-UltraItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 529583D22D19D2D400AECE74 /* Gotham-UltraItalic.otf */; };
+		529583D52D19D2E400AECE74 /* Gotham-XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 529583D42D19D2E400AECE74 /* Gotham-XLight.otf */; };
+		529B0E322D1F021F00D480B2 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 529B0E312D1F021F00D480B2 /* PythonKit */; };
+		52A092E32CC2596000B4E903 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD9F12CB9A74600FAFB1A /* SignIn.swift */; };
+		52A092E42CC2596500B4E903 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FD9ED2CB99FB100FAFB1A /* SignUp.swift */; };
+		52A092E52CC2596A00B4E903 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D699222CB45D3000F33974 /* AudioPlayer.swift */; };
+		52A092E62CC2596D00B4E903 /* SadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6CDC22CB0030100DE2988 /* SadView.swift */; };
+		52A092E72CC2597200B4E903 /* HappyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6CDC02CB002F400DE2988 /* HappyView.swift */; };
+		52A092E82CC2597600B4E903 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F1A5E2CA3335700666D78 /* ViewModel.swift */; };
+		52A092E92CC2597A00B4E903 /* PromtText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CDFB852CA0D8450035DD48 /* PromtText.swift */; };
+		52A092EA2CC2597E00B4E903 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B93E82CA0D7BF00EA252B /* CameraView.swift */; };
+		52A092EB2CC2598200B4E903 /* ViewTwo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B93E62CA0D76B00EA252B /* ViewTwo2.swift */; };
+		52A092EC2CC2598500B4E903 /* MoodifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B93D62CA0D67E00EA252B /* MoodifyApp.swift */; };
+		52A092ED2CC2598800B4E903 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B93D82CA0D67E00EA252B /* ContentView.swift */; };
+		52A5C8172D2153A000140F0C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5C8162D2153A000140F0C /* TestView.swift */; };
+		52A5C8192D2157C800140F0C /* Rawand3Happy_c_features.npy in Resources */ = {isa = PBXBuildFile; fileRef = 52A5C8182D2157C800140F0C /* Rawand3Happy_c_features.npy */; };
+		52A5C81B2D215B3D00140F0C /* Rawand5Happy_c_features.npy in Resources */ = {isa = PBXBuildFile; fileRef = 52A5C81A2D215B3C00140F0C /* Rawand5Happy_c_features.npy */; };
+		52A5C81D2D215B9D00140F0C /* Rawand6Sad_c_features.npy in Resources */ = {isa = PBXBuildFile; fileRef = 52A5C81C2D215B9D00140F0C /* Rawand6Sad_c_features.npy */; };
+		52A5C81F2D215BA300140F0C /* Rawand3Sad_c_features.npy in Resources */ = {isa = PBXBuildFile; fileRef = 52A5C81E2D215BA300140F0C /* Rawand3Sad_c_features.npy */; };
+		52A5C8222D21659C00140F0C /* Rawand5Happy_c_swift.txt in Resources */ = {isa = PBXBuildFile; fileRef = 52A5C8212D21659C00140F0C /* Rawand5Happy_c_swift.txt */; };
+		52A5C8262D21670D00140F0C /* Rawand3Sad_c_swift.txt in Resources */ = {isa = PBXBuildFile; fileRef = 52A5C8252D21670D00140F0C /* Rawand3Sad_c_swift.txt */; };
+		52A5C82A2D2167EA00140F0C /* Rawand6Sad_c_swift.txt in Resources */ = {isa = PBXBuildFile; fileRef = 52A5C8292D2167EA00140F0C /* Rawand6Sad_c_swift.txt */; };
+		52C254FF2D15977B0023E18D /* MLSpeech_SVC.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52C254FE2D15977B0023E18D /* MLSpeech_SVC.mlmodel */; };
+		52C2550A2D15CEA50023E18D /* VoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C255092D15CEA50023E18D /* VoiceView.swift */; };
+		52D8E0B82CA2FED400F9CA8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D8E0B72CA2FED400F9CA8A /* GoogleService-Info.plist */; };
+		52D90B132CD54A1600C2410F /* Fleetwood Mac - Dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52D90B122CD54A1600C2410F /* Fleetwood Mac - Dreams.mp3 */; };
+		52F384AD2D16EFA1009DCDC8 /* LikedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F384AC2D16EFA1009DCDC8 /* LikedPlaylist.swift */; };
+		52F70A242D1ADAA300E35693 /* YouTubeAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F70A232D1ADAA300E35693 /* YouTubeAPIManager.swift */; };
+		52F70A262D1AE23E00E35693 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F70A252D1AE23E00E35693 /* VideoPlayerViewController.swift */; };
+		52F84A382D1C862D00DD8549 /* glowy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 52F84A372D1C862D00DD8549 /* glowy.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52DCEAD22CA2E30A0078B692 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2314F8398955AD1563D8B7A3 /* Pods-Moodify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodify.debug.xcconfig"; path = "Target Support Files/Pods-Moodify/Pods-Moodify.debug.xcconfig"; sourceTree = "<group>"; };
+		2A305BC32722EB73D3C11ADF /* Pods_Moodify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moodify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5214CDC72CA2DB5F007E386B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5227E81F2CDA809300A691E5 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		5227E8212CDA827900A691E5 /* Image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Image.gif; sourceTree = "<group>"; };
+		522B93D62CA0D67E00EA252B /* MoodifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodifyApp.swift; sourceTree = "<group>"; };
+		522B93D82CA0D67E00EA252B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		522B93DA2CA0D67F00EA252B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		522B93DD2CA0D67F00EA252B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		522B93E62CA0D76B00EA252B /* ViewTwo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwo2.swift; sourceTree = "<group>"; };
+		522B93E82CA0D7BF00EA252B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		522EA2D22CB928BC0011CE0D /* Happy - Pharrell Williams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Happy - Pharrell Williams.mp3"; sourceTree = "<group>"; };
+		5248F5082CB92F9700F84184 /* Uptown Funk - Mark Ronson ft. Bruno Mars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Uptown Funk - Mark Ronson ft. Bruno Mars.mp3"; sourceTree = "<group>"; };
+		5248F50A2CB93F4E00F84184 /* Adele - Hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adele - Hello.mp3"; sourceTree = "<group>"; };
+		5248F50C2CB9414000F84184 /* Lord Huron - The Night We Met.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lord Huron - The Night We Met.mp3"; sourceTree = "<group>"; };
+		526172522CC25EAA000A5CFD /* Moodify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moodify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52728FFD2D2DA10C003C3F11 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = Wav_features/AppState.swift; sourceTree = "<group>"; };
+		527FD9ED2CB99FB100FAFB1A /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		527FD9F12CB9A74600FAFB1A /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		528940122D23D8F5008B5C36 /* Bakar - Hell N Back feat. Summer Walker.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bakar - Hell N Back feat. Summer Walker.mp3"; sourceTree = "<group>"; };
+		528940142D23DAB6008B5C36 /* Jungle - Back on 74.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jungle - Back on 74.mp3"; sourceTree = "<group>"; };
+		528940162D23DBE8008B5C36 /* Daft Punk - get lucky feat. Pharrell Williams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Daft Punk - get lucky feat. Pharrell Williams.mp3"; sourceTree = "<group>"; };
+		528940182D240803008B5C36 /* Another Love - Tom Odell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Another Love - Tom Odell.mp3"; sourceTree = "<group>"; };
+		5289401A2D240903008B5C36 /* Audioslave - Like A Stone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Audioslave - Like A Stone.mp3"; sourceTree = "<group>"; };
+		5289401C2D240987008B5C36 /* SYML - Where's My Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SYML - Where's My Love.mp3"; sourceTree = "<group>"; };
+		5289401E2D240A2A008B5C36 /* Madison Beer - Reckless.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Madison Beer - Reckless.mp3"; sourceTree = "<group>"; };
+		528940202D241082008B5C36 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		529583C82D19D2A300AECE74 /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Black.otf"; sourceTree = "<group>"; };
+		529583CA2D19D2AE00AECE74 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		529583CC2D19D2B700AECE74 /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
+		529583CE2D19D2C000AECE74 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		529583D02D19D2C900AECE74 /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Thin.otf"; sourceTree = "<group>"; };
+		529583D22D19D2D400AECE74 /* Gotham-UltraItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-UltraItalic.otf"; sourceTree = "<group>"; };
+		529583D42D19D2E400AECE74 /* Gotham-XLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-XLight.otf"; sourceTree = "<group>"; };
+		529F1A5E2CA3335700666D78 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		52A092EE2CC25C6800B4E903 /* EmotionDetectionModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = EmotionDetectionModel.mlpackage; sourceTree = "<group>"; };
+		52A5C8162D2153A000140F0C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		52A5C8182D2157C800140F0C /* Rawand3Happy_c_features.npy */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rawand3Happy_c_features.npy; sourceTree = "<group>"; };
+		52A5C81A2D215B3C00140F0C /* Rawand5Happy_c_features.npy */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rawand5Happy_c_features.npy; sourceTree = "<group>"; };
+		52A5C81C2D215B9D00140F0C /* Rawand6Sad_c_features.npy */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rawand6Sad_c_features.npy; sourceTree = "<group>"; };
+		52A5C81E2D215BA300140F0C /* Rawand3Sad_c_features.npy */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rawand3Sad_c_features.npy; sourceTree = "<group>"; };
+		52A5C8212D21659C00140F0C /* Rawand5Happy_c_swift.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rawand5Happy_c_swift.txt; sourceTree = "<group>"; };
+		52A5C8252D21670D00140F0C /* Rawand3Sad_c_swift.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rawand3Sad_c_swift.txt; sourceTree = "<group>"; };
+		52A5C8292D2167EA00140F0C /* Rawand6Sad_c_swift.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rawand6Sad_c_swift.txt; sourceTree = "<group>"; };
+		52C254FE2D15977B0023E18D /* MLSpeech_SVC.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MLSpeech_SVC.mlmodel; sourceTree = "<group>"; };
+		52C255092D15CEA50023E18D /* VoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceView.swift; sourceTree = "<group>"; };
+		52CDFB852CA0D8450035DD48 /* PromtText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromtText.swift; sourceTree = "<group>"; };
+		52D699222CB45D3000F33974 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		52D6CDC02CB002F400DE2988 /* HappyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyView.swift; sourceTree = "<group>"; };
+		52D6CDC22CB0030100DE2988 /* SadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadView.swift; sourceTree = "<group>"; };
+		52D8E0B72CA2FED400F9CA8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52D90B122CD54A1600C2410F /* Fleetwood Mac - Dreams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fleetwood Mac - Dreams.mp3"; sourceTree = "<group>"; };
+		52F384AC2D16EFA1009DCDC8 /* LikedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPlaylist.swift; sourceTree = "<group>"; };
+		52F70A232D1ADAA300E35693 /* YouTubeAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeAPIManager.swift; sourceTree = "<group>"; };
+		52F70A252D1AE23E00E35693 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		52F84A372D1C862D00DD8549 /* glowy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = glowy.gif; sourceTree = "<group>"; };
+		620DC14EE210949E6372E1FF /* Pods-Moodify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodify.release.xcconfig"; path = "Target Support Files/Pods-Moodify/Pods-Moodify.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		522B93D02CA0D67E00EA252B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522EEE9F2D161C9900EA1402 /* AudioKit in Frameworks */,
+				1D4B00DAE74719AF24E2699E /* Pods_Moodify.framework in Frameworks */,
+				529B0E322D1F021F00D480B2 /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F0B93E6EF42A18204D1B121 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A305BC32722EB73D3C11ADF /* Pods_Moodify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5227E81A2CDA657C00A691E5 /* songs */ = {
+			isa = PBXGroup;
+			children = (
+				5289401E2D240A2A008B5C36 /* Madison Beer - Reckless.mp3 */,
+				5289401C2D240987008B5C36 /* SYML - Where's My Love.mp3 */,
+				5289401A2D240903008B5C36 /* Audioslave - Like A Stone.mp3 */,
+				528940182D240803008B5C36 /* Another Love - Tom Odell.mp3 */,
+				528940162D23DBE8008B5C36 /* Daft Punk - get lucky feat. Pharrell Williams.mp3 */,
+				528940142D23DAB6008B5C36 /* Jungle - Back on 74.mp3 */,
+				528940122D23D8F5008B5C36 /* Bakar - Hell N Back feat. Summer Walker.mp3 */,
+				5248F50A2CB93F4E00F84184 /* Adele - Hello.mp3 */,
+				522EA2D22CB928BC0011CE0D /* Happy - Pharrell Williams.mp3 */,
+				5248F5082CB92F9700F84184 /* Uptown Funk - Mark Ronson ft. Bruno Mars.mp3 */,
+				52D90B122CD54A1600C2410F /* Fleetwood Mac - Dreams.mp3 */,
+				5248F50C2CB9414000F84184 /* Lord Huron - The Night We Met.mp3 */,
+			);
+			path = songs;
+			sourceTree = "<group>";
+		};
+		522B93CA2CA0D67E00EA252B = {
+			isa = PBXGroup;
+			children = (
+				522B93D52CA0D67E00EA252B /* Moodify */,
+				883A8FF96CF704C0EE808207 /* Pods */,
+				3F0B93E6EF42A18204D1B121 /* Frameworks */,
+				526172522CC25EAA000A5CFD /* Moodify.app */,
+			);
+			sourceTree = "<group>";
+		};
+		522B93D52CA0D67E00EA252B /* Moodify */ = {
+			isa = PBXGroup;
+			children = (
+				52A5C8202D21649400140F0C /* Wav_features */,
+				529583C72D19D27F00AECE74 /* Fonts */,
+				5227E81A2CDA657C00A691E5 /* songs */,
+				5252E6632CC1895E007333D3 /* Model */,
+				527FD9F12CB9A74600FAFB1A /* SignIn.swift */,
+				5227E81F2CDA809300A691E5 /* Gif.swift */,
+				527FD9ED2CB99FB100FAFB1A /* SignUp.swift */,
+				52F384AC2D16EFA1009DCDC8 /* LikedPlaylist.swift */,
+				52728FFD2D2DA10C003C3F11 /* AppState.swift */,
+				52D699222CB45D3000F33974 /* AudioPlayer.swift */,
+				52D6CDC22CB0030100DE2988 /* SadView.swift */,
+				52D6CDC02CB002F400DE2988 /* HappyView.swift */,
+				528940202D241082008B5C36 /* ModelManager.swift */,
+				529F1A5B2CA3329C00666D78 /* ViewModels */,
+				52D8E0B72CA2FED400F9CA8A /* GoogleService-Info.plist */,
+				5214CDC72CA2DB5F007E386B /* Info.plist */,
+				52CDFB852CA0D8450035DD48 /* PromtText.swift */,
+				522B93E82CA0D7BF00EA252B /* CameraView.swift */,
+				52C255092D15CEA50023E18D /* VoiceView.swift */,
+				522B93D62CA0D67E00EA252B /* MoodifyApp.swift */,
+				522B93E62CA0D76B00EA252B /* ViewTwo2.swift */,
+				522B93D82CA0D67E00EA252B /* ContentView.swift */,
+				522B93DA2CA0D67F00EA252B /* Assets.xcassets */,
+				52F84A372D1C862D00DD8549 /* glowy.gif */,
+				5227E8212CDA827900A691E5 /* Image.gif */,
+				522B93DC2CA0D67F00EA252B /* Preview Content */,
+				52F70A232D1ADAA300E35693 /* YouTubeAPIManager.swift */,
+				52F70A252D1AE23E00E35693 /* VideoPlayerViewController.swift */,
+				52A5C8162D2153A000140F0C /* TestView.swift */,
+			);
+			path = Moodify;
+			sourceTree = "<group>";
+		};
+		522B93DC2CA0D67F00EA252B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				522B93DD2CA0D67F00EA252B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5252E6632CC1895E007333D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52C254FE2D15977B0023E18D /* MLSpeech_SVC.mlmodel */,
+				52A092EE2CC25C6800B4E903 /* EmotionDetectionModel.mlpackage */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		529583C72D19D27F00AECE74 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				529583D42D19D2E400AECE74 /* Gotham-XLight.otf */,
+				529583D22D19D2D400AECE74 /* Gotham-UltraItalic.otf */,
+				529583D02D19D2C900AECE74 /* Gotham-Thin.otf */,
+				529583CE2D19D2C000AECE74 /* Gotham-Light.otf */,
+				529583CC2D19D2B700AECE74 /* Gotham-BookItalic.otf */,
+				529583CA2D19D2AE00AECE74 /* Gotham-Bold.otf */,
+				529583C82D19D2A300AECE74 /* Gotham-Black.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		529F1A5B2CA3329C00666D78 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				529F1A5E2CA3335700666D78 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		52A5C8202D21649400140F0C /* Wav_features */ = {
+			isa = PBXGroup;
+			children = (
+				52A5C8252D21670D00140F0C /* Rawand3Sad_c_swift.txt */,
+				52A5C8212D21659C00140F0C /* Rawand5Happy_c_swift.txt */,
+				52A5C8292D2167EA00140F0C /* Rawand6Sad_c_swift.txt */,
+				52A5C8182D2157C800140F0C /* Rawand3Happy_c_features.npy */,
+				52A5C81A2D215B3C00140F0C /* Rawand5Happy_c_features.npy */,
+				52A5C81C2D215B9D00140F0C /* Rawand6Sad_c_features.npy */,
+				52A5C81E2D215BA300140F0C /* Rawand3Sad_c_features.npy */,
+			);
+			path = Wav_features;
+			sourceTree = "<group>";
+		};
+		883A8FF96CF704C0EE808207 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2314F8398955AD1563D8B7A3 /* Pods-Moodify.debug.xcconfig */,
+				620DC14EE210949E6372E1FF /* Pods-Moodify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		522B93D22CA0D67E00EA252B /* Moodify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522B93E12CA0D67F00EA252B /* Build configuration list for PBXNativeTarget "Moodify" */;
+			buildPhases = (
+				9AC9D6A414A0E06BF780DBFC /* [CP] Check Pods Manifest.lock */,
+				522B93D02CA0D67E00EA252B /* Frameworks */,
+				522B93D12CA0D67E00EA252B /* Resources */,
+				B444DB3B05913CFCC4AB061F /* [CP] Embed Pods Frameworks */,
+				52DCEAD22CA2E30A0078B692 /* Embed Frameworks */,
+				52A092E22CC2594100B4E903 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moodify;
+			packageProductDependencies = (
+				522EEE9E2D161C9900EA1402 /* AudioKit */,
+				529B0E312D1F021F00D480B2 /* PythonKit */,
+			);
+			productName = Moodify;
+			productReference = 526172522CC25EAA000A5CFD /* Moodify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		522B93CB2CA0D67E00EA252B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					522B93D22CA0D67E00EA252B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 522B93CE2CA0D67E00EA252B /* Build configuration list for PBXProject "Moodify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 522B93CA2CA0D67E00EA252B;
+			packageReferences = (
+				522EEE9D2D161C9900EA1402 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				529B0E302D1F021F00D480B2 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = 522B93CA2CA0D67E00EA252B;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				522B93D22CA0D67E00EA252B /* Moodify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		522B93D12CA0D67E00EA252B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522B93DE2CA0D67F00EA252B /* Preview Assets.xcassets in Resources */,
+				52A5C81B2D215B3D00140F0C /* Rawand5Happy_c_features.npy in Resources */,
+				522B93DB2CA0D67F00EA252B /* Assets.xcassets in Resources */,
+				5248F5092CB92F9700F84184 /* Uptown Funk - Mark Ronson ft. Bruno Mars.mp3 in Resources */,
+				5289401B2D240903008B5C36 /* Audioslave - Like A Stone.mp3 in Resources */,
+				529583D32D19D2D400AECE74 /* Gotham-UltraItalic.otf in Resources */,
+				52A5C81D2D215B9D00140F0C /* Rawand6Sad_c_features.npy in Resources */,
+				529583C92D19D2A300AECE74 /* Gotham-Black.otf in Resources */,
+				529583D52D19D2E400AECE74 /* Gotham-XLight.otf in Resources */,
+				5289401F2D240A2A008B5C36 /* Madison Beer - Reckless.mp3 in Resources */,
+				52A5C8222D21659C00140F0C /* Rawand5Happy_c_swift.txt in Resources */,
+				52A5C8262D21670D00140F0C /* Rawand3Sad_c_swift.txt in Resources */,
+				529583CF2D19D2C000AECE74 /* Gotham-Light.otf in Resources */,
+				52D90B132CD54A1600C2410F /* Fleetwood Mac - Dreams.mp3 in Resources */,
+				5289401D2D240987008B5C36 /* SYML - Where's My Love.mp3 in Resources */,
+				52A5C8192D2157C800140F0C /* Rawand3Happy_c_features.npy in Resources */,
+				52D8E0B82CA2FED400F9CA8A /* GoogleService-Info.plist in Resources */,
+				528940192D240803008B5C36 /* Another Love - Tom Odell.mp3 in Resources */,
+				529583CD2D19D2B700AECE74 /* Gotham-BookItalic.otf in Resources */,
+				529583D12D19D2C900AECE74 /* Gotham-Thin.otf in Resources */,
+				528940152D23DAB6008B5C36 /* Jungle - Back on 74.mp3 in Resources */,
+				529583CB2D19D2AE00AECE74 /* Gotham-Bold.otf in Resources */,
+				52F84A382D1C862D00DD8549 /* glowy.gif in Resources */,
+				528940132D23D8F5008B5C36 /* Bakar - Hell N Back feat. Summer Walker.mp3 in Resources */,
+				5248F50D2CB9414100F84184 /* Lord Huron - The Night We Met.mp3 in Resources */,
+				528940172D23DBE8008B5C36 /* Daft Punk - get lucky feat. Pharrell Williams.mp3 in Resources */,
+				5227E8222CDA827900A691E5 /* Image.gif in Resources */,
+				522EA2D32CB928BC0011CE0D /* Happy - Pharrell Williams.mp3 in Resources */,
+				52A5C82A2D2167EA00140F0C /* Rawand6Sad_c_swift.txt in Resources */,
+				5248F50B2CB93F4E00F84184 /* Adele - Hello.mp3 in Resources */,
+				52A5C81F2D215BA300140F0C /* Rawand3Sad_c_features.npy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AC9D6A414A0E06BF780DBFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moodify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B444DB3B05913CFCC4AB061F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moodify/Pods-Moodify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moodify/Pods-Moodify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moodify/Pods-Moodify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52A092E22CC2594100B4E903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F384AD2D16EFA1009DCDC8 /* LikedPlaylist.swift in Sources */,
+				52F70A262D1AE23E00E35693 /* VideoPlayerViewController.swift in Sources */,
+				52A092ED2CC2598800B4E903 /* ContentView.swift in Sources */,
+				526172552CC27121000A5CFD /* EmotionDetectionModel.mlpackage in Sources */,
+				52A092EC2CC2598500B4E903 /* MoodifyApp.swift in Sources */,
+				52A092EB2CC2598200B4E903 /* ViewTwo2.swift in Sources */,
+				52A092EA2CC2597E00B4E903 /* CameraView.swift in Sources */,
+				52A092E92CC2597A00B4E903 /* PromtText.swift in Sources */,
+				52C254FF2D15977B0023E18D /* MLSpeech_SVC.mlmodel in Sources */,
+				52728FFE2D2DA10C003C3F11 /* AppState.swift in Sources */,
+				52A092E82CC2597600B4E903 /* ViewModel.swift in Sources */,
+				52A092E72CC2597200B4E903 /* HappyView.swift in Sources */,
+				52A092E62CC2596D00B4E903 /* SadView.swift in Sources */,
+				52C2550A2D15CEA50023E18D /* VoiceView.swift in Sources */,
+				52A092E52CC2596A00B4E903 /* AudioPlayer.swift in Sources */,
+				52A092E42CC2596500B4E903 /* SignUp.swift in Sources */,
+				52A5C8172D2153A000140F0C /* TestView.swift in Sources */,
+				5227E8202CDA809300A691E5 /* Gif.swift in Sources */,
+				528940212D241082008B5C36 /* ModelManager.swift in Sources */,
+				52F70A242D1ADAA300E35693 /* YouTubeAPIManager.swift in Sources */,
+				52A092E32CC2596000B4E903 /* SignIn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		522B93DF2CA0D67F00EA252B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		522B93E02CA0D67F00EA252B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		522B93E22CA0D67F00EA252B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2314F8398955AD1563D8B7A3 /* Pods-Moodify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Moodify/Preview Content\"";
+				DEVELOPMENT_TEAM = 95S2D63U4Q;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Moodify/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app requires access to the camera to capture your mood";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RawandSalameh.Moodify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		522B93E32CA0D67F00EA252B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 620DC14EE210949E6372E1FF /* Pods-Moodify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Moodify/Preview Content\"";
+				DEVELOPMENT_TEAM = 95S2D63U4Q;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Moodify/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app requires access to the camera to capture your mood";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RawandSalameh.Moodify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		522B93CE2CA0D67E00EA252B /* Build configuration list for PBXProject "Moodify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522B93DF2CA0D67F00EA252B /* Debug */,
+				522B93E02CA0D67F00EA252B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522B93E12CA0D67F00EA252B /* Build configuration list for PBXNativeTarget "Moodify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522B93E22CA0D67F00EA252B /* Debug */,
+				522B93E32CA0D67F00EA252B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		522EEE9D2D161C9900EA1402 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
+		529B0E302D1F021F00D480B2 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		522EEE9E2D161C9900EA1402 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 522EEE9D2D161C9900EA1402 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		529B0E312D1F021F00D480B2 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 529B0E302D1F021F00D480B2 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 522B93CB2CA0D67E00EA252B /* Project object */;
+}
