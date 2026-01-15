@@ -16,4 +16,14 @@ Moodify/songs/
 Moodify/Model/EmotionDetectionModel.mlpackage/
 Moodify/Model/MLSpeech_SVC.mlmodel
 Moodify/Wav_features/
+# CocoaPods
+Pods/
+
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcuserdata
+
+# macOS
+.DS_Store
 
